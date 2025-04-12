@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aşkımızın Hikayesi</title>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emre & Esma</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="loader">
-        <h2>Aşkımız yükleniyor...</h2>
-    </div>
-    <div class="container" style="display: none;">
-        <div class="card">
-            <h1 class="animated-text">Her şey 2 Eylül günü Tesla’da başladı...</h1>
-            <button onclick="startStory()">Hikayemize Başla</button>
-            <audio id="bgMusic" loop>
-                <source src="music.mp3" type="audio/mpeg">
-                Tarayıcınız ses dosyasını desteklemiyor.
-            </audio>
-        </div>
-    </div>
-    <script src="scripts.js"></script>
+  <audio id="bgMusic" autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+    Tarayıcınız ses dosyasını desteklemiyor.
+  </audio>
+
+  <div class="header">
+    <h1>Emre & Esma – Sonsuz Aşkımızın Hikayesi</h1>
+    <button class="back-btn" onclick="goToSection('giris')">Girişe Dön</button>
+  </div>
+
+  <div class="main-buttons">
+    <button onclick="goToSection('galeri')">📸 Anılar Galerisi</button>
+    <button onclick="goToSection('ozel')">❤️ Özel Anlar</button>
+    <button onclick="goToSection('komik')">😂 Komik Anlar</button>
+    <button onclick="goToSection('timeline')">📅 Zaman Çizelgesi</button>
+  </div>
+
+  <div class="section" id="galeri"><h2>Anılar Galerisi</h2><p>Buraya fotoğraf ve videolar eklenecek.</p></div>
+  <div class="section" id="ozel"><h2>Özel Anlar</h2><p>Romantik yazılar, videolar burada olacak.</p></div>
+  <div class="section" id="komik"><h2>Komik Anlar</h2><p>Komik videolar, capsler buraya gelecek.</p></div>
+  <div class="section" id="timeline"><h2>Zaman Çizelgesi</h2><p>İlişkinizin tarihi yolculuğu burada yer alacak.</p></div>
+
+  <script src="scripts.js"></script>
 </body>
 </html>

@@ -1,63 +1,61 @@
-* {
-    box-sizing: border-box;
-}
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
-    background: linear-gradient(135deg, #fdf0f3, #ffe2ec, #f3d6eb);
-    background-size: 600% 600%;
-    animation: gradientBG 15s ease infinite;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(135deg, #ffeef3, #e0c3fc);
+  background-size: 400% 400%;
+  animation: gradientBG 20s ease infinite;
+  color: #333;
+  text-align: center;
 }
 @keyframes gradientBG {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    width: 100%;
+.header {
+  padding: 30px 20px 10px;
 }
-.card {
-    background: white;
-    border-radius: 20px;
-    padding: 40px 30px;
-    max-width: 400px;
-    text-align: center;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+.header h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  color: #c94c4c;
 }
-.card h1 {
-    font-family: 'Great Vibes', cursive;
-    font-size: 2.5rem;
-    color: #c94c4c;
-    margin-bottom: 20px;
-    opacity: 0;
-    animation: fadeInText 3s forwards;
+.back-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: #f8b6b8;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  cursor: pointer;
 }
-@keyframes fadeInText {
-    to {
-        opacity: 1;
-    }
+.main-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 0;
 }
-button {
-    background-color: #f08080;
-    border: none;
-    border-radius: 30px;
-    padding: 12px 26px;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    transition: background-color 0.3s ease, transform 0.2s ease;
+.main-buttons button {
+  padding: 16px 30px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 20px;
+  background: #f08080;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
-button:hover {
-    background-color: #e06666;
-    transform: scale(1.05);
+.section {
+  display: none;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  margin: 20px;
+  border-radius: 15px;
+}
+.section h2 {
+  font-size: 1.8rem;
+  color: #d94d4c;
 }
