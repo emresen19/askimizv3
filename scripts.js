@@ -1,6 +1,5 @@
-function goToSection(id) {
-  const sections = document.querySelectorAll('.section');
-  sections.forEach(sec => sec.style.display = 'none');
-  const selected = document.getElementById(id);
-  if (selected) selected.style.display = 'block';
+
+function girisYap() {
+    document.getElementById("giris-ekrani").style.display = "none";
+    document.getElementById("ana-sayfa").style.display = "block";
 }
